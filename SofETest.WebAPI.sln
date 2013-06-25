@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SofETest.WebAPI", "SofETest.WebAPI\SofETest.WebAPI.csproj", "{7A0D9709-3571-4A60-A416-43D71294001B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SofETest.Models", "SofETest.Models\SofETest.Models.csproj", "{B97B9417-649B-4220-8D12-5CE5927835E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SofETest.Services", "SofETest.Services\SofETest.Services.csproj", "{245AD620-FBA8-4D15-9BF6-9D018F1AFAD2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A0D9709-3571-4A60-A416-43D71294001B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A0D9709-3571-4A60-A416-43D71294001B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A0D9709-3571-4A60-A416-43D71294001B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A0D9709-3571-4A60-A416-43D71294001B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B97B9417-649B-4220-8D12-5CE5927835E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B97B9417-649B-4220-8D12-5CE5927835E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B97B9417-649B-4220-8D12-5CE5927835E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B97B9417-649B-4220-8D12-5CE5927835E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{245AD620-FBA8-4D15-9BF6-9D018F1AFAD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{245AD620-FBA8-4D15-9BF6-9D018F1AFAD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{245AD620-FBA8-4D15-9BF6-9D018F1AFAD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{245AD620-FBA8-4D15-9BF6-9D018F1AFAD2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
