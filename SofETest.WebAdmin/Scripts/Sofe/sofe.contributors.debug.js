@@ -92,13 +92,11 @@
         router = $sofe.router;
 
     router.route('/contributors', function () {
-        
-        dataSource.fetch(function () {
 
-            $sofe.mainLayout.showIn('#content', pageView);
+        dataSource.read();
 
-        });
-        
+        $sofe.mainLayout.showIn('#content', pageView);
+
     });
 
 })(jQuery, jQuery.sofe);
