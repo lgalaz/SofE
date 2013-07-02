@@ -1,66 +1,84 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-@section featured {
-    <section class="featured">
-        <div class="content-wrapper">
-            <hgroup class="title">
-                <h1>@ViewBag.Title.</h1>
-                <h2>@ViewBag.Message</h2>
-            </hgroup>
-            <p>
-                To learn more about ASP.NET MVC visit
-                <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
-                The page features <mark>videos, tutorials, and samples</mark> to help you get the most from ASP.NET MVC.
-                If you have any questions about ASP.NET MVC visit
-                <a href="http://forums.asp.net/1146.aspx/1?MVC" title="ASP.NET MVC Forum">our forums</a>.
-            </p>
+
+<section id="application">
+</section>
+
+<script type="text/x-kendo-tmpl" id="app-layout-template">
+    <section id="wrapper">
+        <section id="header">
+            <header>
+                <h1>SofE Admin Console</h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#/">Home</a>
+                        </li>
+                        <li>
+                            <a href="#/contributors">Contributors</a>
+                        </li>
+                        <li>
+                            <a href="#/other">Another page</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+        <section id="content">
+            <!-- Everything goes here -->
+        </section>
+        <section id="footer">
+            <footer>
+                <span><b>&copy; 2013 Nearsoft, Inc.</b></span>
+            </footer>
+        </section>
+    </section>
+</script>
+
+<script type="text/x-kendo-tmpl" id="app-index-template">
+</script>
+
+<script type="text/x-kendo-template" id="index-template">
+    <section>
+        <h1>Welcome1</h1>
+        <p>Hello world, welcome to my sample page. Things you can try:</p>
+            <ul>
+                <li>Click, click everywhere!</li>
+                <li>Navigate between the different pages</li>
+                <li>Modify source code</li>
+                <li>Check more info at <a href="http://docs.kendoui.com/api/">Kendo UI Docs</a></li>
+            </ul>
+        <p>Have fun!</p>
+    </section>
+</script>
+
+<script type="text/x-kendo-template" id="contributors-template">
+    <section>
+        <h1>Contributors</h1>
+        <p>In the grid below, you can create, read, update or delete items as you wish.</p>
+        <div
+            data-role="grid"
+            data-bind="source: data"
+            data-editable="inline"
+            data-autoBind="true"
+            data-toolbar="['create']"
+            data-columns="[{field: 'Name'},
+                            {field: 'Phone'},
+                            {field: 'Email'},
+                            {
+                                title: 'Actions',
+                                command: ['edit', 'destroy']
+                            }]"
+            data-pageable="true"
+            >
         </div>
     </section>
-}
-<h3>We suggest the following:</h3>
-<ol class="round">
-    <li class="one">
-        <h5>Add contributor</h5>
-        <script type="text/javascript"src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script type="text/javascript">
-            function addContributor() {
-                var Contributor = {};
-                Contributor.Name = "Luis Galaz";
-                Contributor.Phone = 1234567890;
-                Contributor.Email = "lgalaz@gmail.com";
-               
-                $.ajax({
-                    url: "http://localhost:1432/api/contributors",
-                    type: "POST",
-                contentType: "application/json;charset=utf-8",
-                data: JSON.stringify(Contributor),
-                dataType: "json",
-                success: function (response) {
-                    alert(response);
-                },
-                error: function (x, e) {
-                    alert('Failed');
-                    alert(x.responseText);
-                    alert(x.status);
-                }
-            });
-            }
+</script>
 
-        </script>
-        <input type="button" onclick="addContributor()" />
-    </li>
-
-    <li class="two">
-        <h5>Add NuGet packages and jump-start your coding</h5>
-        NuGet makes it easy to install and update free libraries and tools.
-        <a href="http://go.microsoft.com/fwlink/?LinkId=245153">Learn more…</a>
-    </li>
-
-    <li class="three">
-        <h5>Find Web Hosting</h5>
-        You can easily find a web hosting company that offers the right mix of features
-        and price for your applications.
-        <a href="http://go.microsoft.com/fwlink/?LinkId=245157">Learn more…</a>
-    </li>
-</ol>
+<script type="text/x-kendo-template" id="other-template">
+    <section>
+        <h1>This is another page</h1>
+        <p>You can do whatever you want with this template ☺</p>
+    </section>
+</script>

@@ -23,7 +23,19 @@ namespace SofETest.WebAdmin
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
+            bundles.Add(new ScriptBundle("~/bundles/kendo").Include(
+                        "~/Scripts/Kendo/kendo.web.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/sofe").Include(
+                        "~/Scripts/Sofe/sofe.site.debug.js",
+                        "~/Scripts/Sofe/sofe.home.debug.js",
+                        "~/Scripts/Sofe/sofe.contributors.debug.js",
+                        "~/Scripts/Sofe/sofe.other.debug.js"));
+
+            bundles.Add(new StyleBundle("~/Content/css").Include(
+                "~/Content/Kendo/kendo.common.css",
+                "~/Content/Kendo/kendo.default.css",
+                "~/Content/style.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",
