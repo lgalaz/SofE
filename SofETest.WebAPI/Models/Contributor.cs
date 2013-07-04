@@ -16,7 +16,7 @@ namespace SofETest.WebAPI.Models
         [StringLength(50, ErrorMessage = "Email must not be more than 50 characters long")]
         public string Email { get; set; }
 
-        [Range(1, 9999999999, ErrorMessage = "Phone must be an integer grater or equal to 1 and no bigger than 9999999999")]
+        [Range(1000000000, 9999999999, ErrorMessage = "Phone must be an integer grater or equal to 1000000000 and no bigger than 9999999999")]
         public long Phone { get; set; }
 
         public Contributor()
