@@ -33,7 +33,7 @@ namespace SofETest.Clients
             return contributor;
         }
 
-        public string Create(Contributor contributor)
+        public void Create(Contributor contributor)
         {
             Uri contributorUri = null;
 
@@ -42,8 +42,6 @@ namespace SofETest.Clients
             {
                 contributorUri = response.Headers.Location;
             }
-
-            return contributorUri.AbsoluteUri;
         }
 
         public string Update(Contributor contributor)

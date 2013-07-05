@@ -27,9 +27,9 @@ namespace SofETest.WebAdmin.Controllers
 
         // POST api/contributors
         [HttpPost]
-        public string Post([FromBody]Contributor contributor)
+        public void Post([FromBody]Contributor contributor)
         {
-            return client.Contributors.Create(contributor);
+            client.Contributors.Create(contributor);
         }
 
         // PUT api/contributors, id comes with the object.
